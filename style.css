@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+}
+.container{
+    height: 100vh;
+    /* border: 2px solid black; */
+}
+.title-bar{
+    height: 5vh;
+    background-color:  #016F36;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-bar{
+    height: 5vh;
+    background-color:  #016F36;
+    display: flex;
+    /* border: 2px solid blue; */
+}
+.menu-item{
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-item:hover{
+    background-color: #025e2e;
+}
+.menu-item.selected{
+    background: white;
+    color: #016F36;
+    cursor: default;
+}
+.tool-bar{
+    height: 6vh;
+    display: flex;
+    background-color: rgb(236, 235, 235);
+    align-items: center;
+}
+.tool-icon{
+    margin-left: 12px;
+    margin-right: 12px;
+    color: rgb(65, 64, 64);
+    /* margin-top: 7px; */
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: center; */
+}
+.tool-icon:hover{
+    background: rgb(190, 190, 190);
+}
+
+.selector{
+    height: 25px;
+    font-size: 16px;
+}
+.font-family{
+    width: 150px;
+}
+.formula-bar{
+    height: 5vh;
+    /* border: 2px solid green; */
+}
+.font-size{
+    margin-left: 10px;
+}
+.cell-container{
+    height: 74vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid magenta; */
+}
+.cell-container-item{
+    border: 1px solid black;
+}
+.select-all{
+    height: 35px;
+    width: 35px;
+}
+.col-name-container{
+    height: 35px;
+    width: calc(100vw - 35px);
+}
+.row-name-container{
+    width: 35px;
+    height: calc(74vh - 35px);
+}
+.input-cell-container{
+    height: calc(74vh - 35px);
+    width: calc(100vw - 35px);
+}
+.sheet-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    /* border: 2px solid gray; */
+}
+.sheet-bar .material-icons{
+    color: rgb(65, 64, 64);
+    cursor: pointer;
+    
+}
+.sheet-nav{
+    width: 8vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item:hover{
+    background: rgb(190, 190, 190);
+}
+.sheet-container{
+    margin: 20px;
+    border-bottom: 4px solid #016F36;
+    display: flex;
+    border: 1px solid rgb(36, 36, 36);
+    background-color: white;
+    width: 8vw;
+    padding-left: 5px;
+    align-items: center;
+}
+.sheets{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 4px solid #016F36;
+}
+.add-sheet:hover{
+    transform: scale(1.2);
+}
