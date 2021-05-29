@@ -51,16 +51,21 @@ body{
 .tool-icon{
     margin-left: 12px;
     margin-right: 12px;
-    color: rgb(65, 64, 64);
-    /* margin-top: 7px; */
-    /* height: 100%; */
-    /* display: flex;
-    justify-content: center; */
+    color: rgb(115, 114, 114);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .tool-icon:hover{
-    background: rgb(190, 190, 190);
+    background: rgb(210, 210, 210);
 }
-
+.selected{
+    background-color: rgb(210, 210, 210);
+    border: 0.5px solid rgb(50, 50, 50);
+}
 .selector{
     height: 25px;
     font-size: 16px;
@@ -70,7 +75,34 @@ body{
 }
 .formula-bar{
     height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: rgb(216, 215, 215);
     /* border: 2px solid green; */
+}
+.formula-editor{
+    height: 70%;
+    border: 1px solid rgb(186, 185, 185);
+    background-color: white;
+}
+.selected-cell{
+    width: 100px;
+}
+.function-sign{
+    width: 40px;
+    height: 70%;
+    margin-left: 17px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+}
+.formula-input{
+    width: calc(100vw - 200px);
+    outline-color: #025e2e;
+    padding: 0px 7px;
+    display: flex;
+    align-items: center;
 }
 .font-size{
     margin-left: 10px;
@@ -82,23 +114,65 @@ body{
     /* border: 2px solid magenta; */
 }
 .cell-container-item{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .select-all{
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(216, 215, 215);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 .col-name-container{
-    height: 35px;
-    width: calc(100vw - 35px);
+    height: 25px;
+    width: calc(100vw - 25px);
+    display: flex;
+    align-items: center;
+    background-color: rgb(216, 215, 215);
+    border-bottom: 1px solid black;
+    color: rgb(86, 85, 85);
+}
+.col-name{
+    height: 101%;
+    min-width: 100px;
+    border-right: 1px solid rgb(186, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .row-name-container{
-    width: 35px;
-    height: calc(74vh - 35px);
+    width: 25px;
+    height: calc(74vh - 25px);
+    background-color: rgb(216, 215, 215);
+    border-right: 1px solid black;
+    color: rgb(86, 85, 85);
+    overflow: hidden;
+}
+.row-name{
+    min-height: 30px;
+    border-bottom: 1px solid rgb(186, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .input-cell-container{
-    height: calc(74vh - 35px);
-    width: calc(100vw - 35px);
+    height: calc(74vh - 25px);
+    width: calc(100vw - 25px);
+    overflow: hidden;
+}
+.input-cell-row{
+    display: flex;
+}
+.input-cell{
+    min-width: 100px;
+    min-height: 30px;
+    padding : 0px 4px;    
+    border-bottom: 1px solid rgb(186, 185, 185);
+    border-right: 1px solid rgb(186, 185, 185);
+    display: flex;
+    align-items: center;
+    outline-color: #025e2e;
 }
 .sheet-bar{
     height: 5vh;
